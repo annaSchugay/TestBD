@@ -1,11 +1,13 @@
 @import "../mixins/breakpoint";
 
 header {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   background-image: url('../img/Rectangle.png');
   background-size: cover;
   color: #fff;
+  height: 100vh;
   .logo {
     display: flex;
     align-items: center;
@@ -14,23 +16,28 @@ header {
     }
   }
 
+  .container {
+    height: 100%;
+  }
+
   .slogan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     & > * {
-      width: 50%;
+      width: 40%;
       @include breakpoint(small-tablet-portrait) {
         width: 100%;
       }
     }
-    min-height: 500px;
-    @include breakpoint(extra-small) {
-      padding-top: 20vh;
-      min-height: auto;
-    }
+    height: 100%;
   }
-  @include breakpoint(horizontal-iPad) {
-    height: 100vh;
+
+  img.phone {
+    position: absolute;
+    width: 30%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(5%) translateY(-80%);
   }
 }
