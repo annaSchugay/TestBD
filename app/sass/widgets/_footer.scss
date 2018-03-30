@@ -2,6 +2,22 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #192431;
+  .wrapper {
+    display: flex;
+    & > div {
+      flex-basis: 50%;
+      flex-grow: 1;
+      flex-shrink: 0;
+      @include breakpoint(mobile-landscape) {
+        flex-basis: 100%;
+      }
+    }
+
+    @include breakpoint(mobile-landscape) {
+      flex-wrap: wrap;
+    }
+  }
+
   p {
     color: #fff;
   }
@@ -45,6 +61,7 @@ footer {
       border-radius: 5px;
       max-width: 350px;
       input {
+        border-radius: 0;
         background-color: #fff;
         padding: 10px;
         margin: 0;
@@ -74,9 +91,13 @@ footer {
       margin-top: 10px;
       font-weight: bold;
     }
-    
-    @include breakpoint(small-tablet-portrait) {
+
+    @include breakpoint(middle-small) {
       padding-left: 15px;
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+      padding-left: 0px;
       margin-top: 50px;
     }
   }

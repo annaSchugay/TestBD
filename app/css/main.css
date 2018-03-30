@@ -636,7 +636,7 @@ body {
     font-size: 26px; }
     @media (max-width: 768px) {
       body h2 {
-        font-size: 16px; } }
+        font-size: 20px; } }
   body h3 {
     font-size: 22px;
     padding: 10px 0; }
@@ -793,9 +793,7 @@ header {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  padding-top: 55px;
-  padding-bottom: 55px; }
+          flex-wrap: wrap; }
   .about-us h3, .about-us p, .about-us a {
     color: #fff; }
   .about-us a.read-more {
@@ -947,6 +945,32 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #192431; }
+  footer .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .wrapper > div {
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+      @media (max-width: 480px) {
+        footer .wrapper > div {
+          -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%; } }
+    @media (max-width: 480px) {
+      footer .wrapper {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
   footer p {
     color: #fff; }
   footer .title {
@@ -996,6 +1020,8 @@ footer {
               border-radius: 5px;
       max-width: 350px; }
       footer .feedback form input {
+        -webkit-border-radius: 0;
+                border-radius: 0;
         background-color: #fff;
         padding: 10px;
         margin: 0;
@@ -1020,7 +1046,10 @@ footer {
       color: #57697f;
       margin-top: 10px;
       font-weight: bold; }
+    @media (max-width: 992px) {
+      footer .feedback {
+        padding-left: 15px; } }
     @media (max-width: 560px) {
       footer .feedback {
-        padding-left: 15px;
+        padding-left: 0px;
         margin-top: 50px; } }
