@@ -942,3 +942,85 @@ header {
               box-shadow: 1px 1px 75px 25px #eaebee; }
       .our-prices .plan-item.active span.label {
         background-color: #bd8cbf; }
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #192431; }
+  footer p {
+    color: #fff; }
+  footer .title {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  footer .navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px; }
+    footer .navigation span {
+      display: inline-block;
+      font-size: 10px;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 20px; }
+    footer .navigation a {
+      font-family: "OpenSans-Light";
+      margin-top: 10px;
+      padding-top: 0;
+      font-weight: normal; }
+      footer .navigation a:hover {
+        font-weight: bold; }
+  footer .feedback {
+    padding-left: 75px; }
+    footer .feedback form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: stretch;
+      -webkit-justify-content: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      width: 100%;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      max-width: 350px; }
+      footer .feedback form input {
+        background-color: #fff;
+        padding: 10px;
+        margin: 0;
+        border: none;
+        width: 100%; }
+        footer .feedback form input[type='submit'] {
+          background-color: #82ca9c;
+          background-image: url("../img/check.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          padding: 0;
+          width: 45px;
+          height: 45px;
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          cursor: pointer; }
+        footer .feedback form input:focus {
+          border: none;
+          outline: none; }
+    footer .feedback p.warning {
+      color: #57697f;
+      margin-top: 10px;
+      font-weight: bold; }
+    @media (max-width: 560px) {
+      footer .feedback {
+        padding-left: 15px;
+        margin-top: 50px; } }
