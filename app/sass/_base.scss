@@ -3,10 +3,13 @@
 body {
   font-family: "OpenSans", sans-serif;
 
-  h1 {
+  h1, h2, h3 {
     font-family: "OpenSans-Light", sans-serif;
-    font-size: 45px;
     font-weight: normal;
+  }
+
+  h1 {
+    font-size: 45px;
     padding: 10px 0;
     @include breakpoint(extra-small) {
       font-size: 26px;
@@ -14,12 +17,17 @@ body {
   }
 
   h2 {
-    font-family: "OpenSans-Light", sans-serif;
     font-size: 26px;
-    font-weight: normal;
-    //padding: 10px 0;
     @include breakpoint(extra-small) {
       font-size: 16px;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    padding: 10px 0;
+    @include breakpoint(extra-small) {
+      font-size: 14px;
     }
   }
 
@@ -27,6 +35,13 @@ body {
     font-size: 10px;
     line-height: 16px;
     margin-top: 20px;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   img {

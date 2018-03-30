@@ -1,19 +1,9 @@
 .start-new {
   margin-top: 55px;
   margin-bottom: 55px;
-  h2, p {
-    width: 50%;
-    @include breakpoint(mobile-landscape) {
-      width: 100%;
-    }
-  }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    max-height: 270px;
+    column-count: 2;
     p {
       color: #959595;
       padding-right: 20px;
@@ -27,8 +17,9 @@
           }
         }
       }
-      @include breakpoint(small-tablet-portrait) {
+      @include breakpoint(mobile-landscape) {
         padding-right: 0;
+        column-count: 1;
       }
     }
 

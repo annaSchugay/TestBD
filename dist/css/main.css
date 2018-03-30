@@ -623,25 +623,48 @@ table {
 /*</>bootstrap-grid*/
 body {
   font-family: "OpenSans", sans-serif; }
-  body h1 {
+  body h1, body h2, body h3 {
     font-family: "OpenSans-Light", sans-serif;
+    font-weight: normal; }
+  body h1 {
     font-size: 45px;
-    font-weight: normal;
     padding: 10px 0; }
     @media (max-width: 768px) {
       body h1 {
         font-size: 26px; } }
+  body h2 {
+    font-size: 26px; }
+    @media (max-width: 768px) {
+      body h2 {
+        font-size: 16px; } }
+  body h3 {
+    font-size: 22px;
+    padding: 10px 0; }
+    @media (max-width: 768px) {
+      body h3 {
+        font-size: 14px; } }
   body p {
     font-size: 10px;
-    line-height: 16px; }
+    line-height: 16px;
+    margin-top: 20px; }
+  body a {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none; }
+  body img {
+    max-width: 100%;
+    height: auto; }
 
 header {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   background-image: url("../img/Rectangle.png");
   -webkit-background-size: cover;
           background-size: cover;
-  color: #fff; }
+  color: #fff;
+  height: 100vh; }
   header .logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -653,6 +676,8 @@ header {
             align-items: center; }
     header .logo img:first-child {
       margin-right: 5px; }
+  header .container {
+    height: 100%; }
   header .slogan {
     display: -webkit-box;
     display: -webkit-flex;
@@ -667,16 +692,84 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 500px; }
+    height: 100%; }
     header .slogan > * {
-      width: 50%; }
+      width: 40%; }
       @media (max-width: 560px) {
         header .slogan > * {
           width: 100%; } }
+  header img.phone {
+    position: absolute;
+    width: 30%;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(5%) translateY(-80%);
+        -ms-transform: translateX(5%) translateY(-80%);
+            transform: translateX(5%) translateY(-80%); }
+
+.start-new {
+  margin-top: 55px;
+  margin-bottom: 55px; }
+  .start-new h2, .start-new p {
+    width: 50%; }
+    @media (max-width: 480px) {
+      .start-new h2, .start-new p {
+        width: 100%; } }
+  .start-new .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+            align-content: flex-end;
+    max-height: 270px; }
+    .start-new .content p {
+      color: #959595;
+      padding-right: 20px; }
+      @media (min-width: 1025px) {
+        .start-new .content p:nth-child(4):before {
+          content: "";
+          display: block;
+          height: 50px;
+          width: 100%; } }
+      @media (max-width: 560px) {
+        .start-new .content p {
+          padding-right: 0; } }
+    @media (max-width: 560px) {
+      .start-new .content {
+        max-height: none; } }
+
+.about-us {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 55px;
+  margin-bottom: 55px; }
+  .about-us h3, .about-us p, .about-us a {
+    color: #fff; }
+  .about-us .about-us-item {
+    padding: 30px;
+    width: 33.3%;
+    -webkit-background-size: cover !important;
+            background-size: cover !important; }
+    .about-us .about-us-item a {
+      padding-top: 20px; }
+      .about-us .about-us-item a .fa {
+        margin-left: 15px; }
+    .about-us .about-us-item.large {
+      width: 66.6%; }
+      @media (max-width: 768px) {
+        .about-us .about-us-item.large {
+          width: 100%; } }
     @media (max-width: 768px) {
-      header .slogan {
-        padding-top: 20vh;
-        min-height: auto; } }
-  @media (max-width: 1024px) {
-    header {
-      height: 100vh; } }
+      .about-us .about-us-item {
+        width: 100%; } }
