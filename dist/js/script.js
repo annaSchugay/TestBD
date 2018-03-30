@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.plan-item').focus(function() {
+  $('.plan-item').hover(function() {
     console.log(9);
     $( this ).toggleClass( "active" );
   });
