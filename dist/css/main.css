@@ -705,6 +705,7 @@ header {
   background-image: url("../img/Rectangle.png");
   -webkit-background-size: cover;
           background-size: cover;
+  background-position: center;
   color: #fff;
   height: 100vh; }
   header p {
