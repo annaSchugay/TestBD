@@ -16,8 +16,9 @@
           }
         }
       }
-      @include breakpoint(small-tablet-portrait) {
+      @include breakpoint(mobile-landscape) {
         padding-right: 0;
+        column-count: 1;
       }
     }
     @include breakpoint(small-tablet-portrait) {

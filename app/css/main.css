@@ -623,25 +623,35 @@ table {
 /*</>bootstrap-grid*/
 body {
   font-family: "OpenSans", sans-serif; }
-  body h1 {
+  body h1, body h2, body h3 {
     font-family: "OpenSans-Light", sans-serif;
+    font-weight: normal; }
+  body h1 {
     font-size: 45px;
-    font-weight: normal;
     padding: 10px 0; }
     @media (max-width: 768px) {
       body h1 {
         font-size: 26px; } }
   body h2 {
-    font-family: "OpenSans-Light", sans-serif;
-    font-size: 26px;
-    font-weight: normal; }
+    font-size: 26px; }
     @media (max-width: 768px) {
       body h2 {
         font-size: 16px; } }
+  body h3 {
+    font-size: 22px;
+    padding: 10px 0; }
+    @media (max-width: 768px) {
+      body h3 {
+        font-size: 14px; } }
   body p {
     font-size: 10px;
     line-height: 16px;
     margin-top: 20px; }
+  body a {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none; }
   body img {
     max-width: 100%;
     height: auto; }
@@ -719,11 +729,72 @@ header {
           display: block;
           height: 52px;
           width: 100%; } }
-      @media (max-width: 560px) {
+      @media (max-width: 480px) {
         .start-new .content p {
-          padding-right: 0; } }
+          padding-right: 0;
+          -webkit-column-count: 1;
+             -moz-column-count: 1;
+                  column-count: 1; } }
     @media (max-width: 560px) {
       .start-new .content {
         -webkit-column-count: 1;
            -moz-column-count: 1;
                 column-count: 1; } }
+
+.about-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 55px;
+  margin-bottom: 55px; }
+  .about-us h3, .about-us p, .about-us a {
+    color: #fff; }
+  .about-us .about-us-item {
+    padding: 30px;
+    width: 33.3%;
+    -webkit-background-size: cover !important;
+            background-size: cover !important; }
+    .about-us .about-us-item a {
+      padding-top: 20px; }
+      .about-us .about-us-item a .fa {
+        margin-left: 15px; }
+    .about-us .about-us-item.large {
+      width: 66.6%; }
+      @media (max-width: 757px) {
+        .about-us .about-us-item.large {
+          width: 100%; } }
+    @media (max-width: 757px) {
+      .about-us .about-us-item {
+        width: 100%; } }
+  .about-us ul.slick-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 15px 0; }
+    .about-us ul.slick-dots li {
+      margin: 0px 5px; }
+      .about-us ul.slick-dots li button {
+        display: block;
+        background-color: transparent;
+        font-size: 0;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #ac8458;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .about-us ul.slick-dots li button:focus, .about-us ul.slick-dots li button:active {
+        border: none;
+        outline: none; }
+      .about-us ul.slick-dots li.slick-active button {
+        background-color: #ac8458; }

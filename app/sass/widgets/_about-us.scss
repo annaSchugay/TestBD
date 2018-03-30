@@ -1,0 +1,67 @@
+.about-us {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  h3, p, a {
+    color: #fff;
+  }
+
+  .about-us-item {
+    padding: 30px;
+    width: 33.3%;
+    background-size: cover !important;
+    a {
+      padding-top: 20px;
+      .fa {
+        margin-left: 15px;
+      }
+    }
+
+    &.large {
+      width: 66.6%;
+      @include breakpoint(extra-small-mobile) {
+        width: 100%;
+      }
+    }
+
+    @include breakpoint(extra-small-mobile) {
+      width: 100%;
+    }
+  }
+
+  ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+    li {
+      margin: 0px 5px;
+      button {
+        display: block;
+        background-color: transparent;
+        font-size: 0;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #ac8458;
+        border-radius: 50%;
+      }
+
+
+        button {
+          &:focus, &:active {
+          border: none;
+          outline: none;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background-color: #ac8458;
+        }
+      }
+    }
+  }
+}
+
