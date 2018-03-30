@@ -1,5 +1,6 @@
 .start-new {
   margin-top: 55px;
+  margin-bottom: 55px;
   h2, p {
     width: 50%;
     @include breakpoint(mobile-landscape) {

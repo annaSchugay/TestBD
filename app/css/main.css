@@ -698,7 +698,8 @@ header {
             transform: translateX(5%) translateY(-80%); }
 
 .start-new {
-  margin-top: 55px; }
+  margin-top: 55px;
+  margin-bottom: 55px; }
   .start-new h2, .start-new p {
     width: 50%; }
     @media (max-width: 480px) {
