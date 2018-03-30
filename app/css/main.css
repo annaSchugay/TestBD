@@ -646,7 +646,8 @@ body {
   body p {
     font-size: 10px;
     line-height: 16px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #959595; }
   body a {
     display: inline-block;
     font-size: 10px;
@@ -665,6 +666,8 @@ header {
           background-size: cover;
   color: #fff;
   height: 100vh; }
+  header p {
+    color: #fff; }
   header .logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -720,7 +723,6 @@ header {
        -moz-column-count: 2;
             column-count: 2; }
     .start-new .content p {
-      color: #959595;
       padding-right: 20px; }
       @media (min-width: 561px) {
         .start-new .content p:nth-child(3):after {
@@ -745,7 +747,6 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -753,6 +754,18 @@ header {
   margin-bottom: 55px; }
   .about-us h3, .about-us p, .about-us a {
     color: #fff; }
+  .about-us .slick-track {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .about-us .about-us-item {
     position: relative;
     padding: 30px;
@@ -816,3 +829,14 @@ header {
         outline: none; }
       .about-us ul.slick-dots li.slick-active button {
         background-color: #ac8458; }
+
+.how-we-work {
+  margin-top: 55px;
+  margin-bottom: 55px; }
+  .how-we-work h2 {
+    margin-bottom: 20px; }
+  .how-we-work p {
+    font-family: "OpenSans", sans-serif; }
+    .how-we-work p.title {
+      font-weight: bold;
+      color: #67676d; }

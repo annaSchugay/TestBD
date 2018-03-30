@@ -1,11 +1,16 @@
 .about-us {
   display: flex;
-  overflow: hidden;
   flex-wrap: wrap;
   margin-top: 55px;
   margin-bottom: 55px;
   h3, p, a {
     color: #fff;
+  }
+
+  .slick-track {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .about-us-item {

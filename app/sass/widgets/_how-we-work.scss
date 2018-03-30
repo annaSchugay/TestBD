@@ -1,0 +1,15 @@
+.how-we-work {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "OpenSans", sans-serif;
+    &.title {
+      font-weight: bold;
+      color: #67676d;
+    }
+  }
+}
