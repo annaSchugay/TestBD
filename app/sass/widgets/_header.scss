@@ -39,5 +39,9 @@ header {
     top: 100%;
     left: 50%;
     transform: translateX(5%) translateY(-80%);
+    @include breakpoint(small-tablet-portrait) {
+      width: 40%;
+      transform: translateX(0) translateY(-70%);
+    }
   }
 }

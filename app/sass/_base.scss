@@ -17,7 +17,6 @@ body {
     font-family: "OpenSans-Light", sans-serif;
     font-size: 26px;
     font-weight: normal;
-    //padding: 10px 0;
     @include breakpoint(extra-small) {
       font-size: 16px;
     }
