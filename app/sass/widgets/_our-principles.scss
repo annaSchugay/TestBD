@@ -1,0 +1,33 @@
+.our-principles {
+  height: 100vh;
+  background: url("../img/Layer8.png");
+  background-size: cover;
+  p {
+    color: #fff;
+  }
+
+  .content {
+    position: relative;
+    top: 50%;
+    a.read-more {
+      position: static;
+      transform: translateX(0) translateY(0);
+      margin: 0;
+    }
+
+    & > * {
+      width: 45%;
+      @include breakpoint(small-tablet-portrait) {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint(extra-small-mobile) {
+    height: 100vh;
+  }
+
+  @include breakpoint(small-tablet-portrait-up) {
+    height: 150vh;
+  }
+}

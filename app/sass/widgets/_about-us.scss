@@ -7,42 +7,12 @@
     color: #fff;
   }
 
-  .slick-track {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
   .about-us-item {
     position: relative;
     padding: 30px;
+    padding-bottom: 55px;
     width: 33.3%;
     background-size: cover !important;
-    a {
-      padding-top: 20px;
-      .fa {
-        margin-left: 15px;
-      }
-
-      &.read-more {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        transform: translateX(0) translateY(-100%);
-        margin-top: -35px;
-        margin-left: 30px;
-      }
-
-      &.like {
-        position: absolute;
-        top: 100%;
-        left: 100%;
-        transform: translateX(-100%) translateY(-100%);
-        margin-top: -30px;
-        margin-left: -30px;
-      }
-    }
-
     &.large {
       width: 66.6%;
       @include breakpoint(extra-small-mobile) {

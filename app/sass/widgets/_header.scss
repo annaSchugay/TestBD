@@ -47,4 +47,8 @@ header {
       transform: translateX(0) translateY(-70%);
     }
   }
+
+  @include breakpoint(small-tablet-portrait-up) {
+    height: 150vh;
+  }
 }

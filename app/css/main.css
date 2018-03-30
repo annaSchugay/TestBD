@@ -623,7 +623,7 @@ table {
 /*</>bootstrap-grid*/
 body {
   font-family: "OpenSans", sans-serif; }
-  body h1, body h2, body h3 {
+  body h1, body h2, body h3, body h4 {
     font-family: "OpenSans-Light", sans-serif;
     font-weight: normal; }
   body h1 {
@@ -643,6 +643,13 @@ body {
     @media (max-width: 768px) {
       body h3 {
         font-size: 14px; } }
+  body h4 {
+    color: #fff;
+    font-size: 45px;
+    padding: 10px 0; }
+    @media (max-width: 768px) {
+      body h4 {
+        font-size: 26px; } }
   body p {
     font-size: 10px;
     line-height: 16px;
@@ -656,6 +663,48 @@ body {
   body img {
     max-width: 100%;
     height: auto; }
+
+a {
+  padding-top: 20px;
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all; }
+  a:visited, a:hover {
+    color: #fff;
+    text-decoration: underline; }
+  a .fa {
+    margin-left: 15px; }
+  a.read-more {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translateX(0) translateY(-100%);
+        -ms-transform: translateX(0) translateY(-100%);
+            transform: translateX(0) translateY(-100%);
+    margin-top: -35px;
+    margin-left: 30px; }
+  a.like {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    -webkit-transform: translateX(-100%) translateY(-100%);
+        -ms-transform: translateX(-100%) translateY(-100%);
+            transform: translateX(-100%) translateY(-100%);
+    margin-top: -30px;
+    margin-left: -30px; }
+    a.like .fa {
+      padding: 5px;
+      -webkit-transition: 0.3s all;
+      -o-transition: 0.3s all;
+      transition: 0.3s all;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+      a.like .fa:hover {
+        -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+                transform: scale(1.5); }
 
 header {
   position: relative;
@@ -714,6 +763,9 @@ header {
         -webkit-transform: translateX(0) translateY(-70%);
             -ms-transform: translateX(0) translateY(-70%);
                 transform: translateX(0) translateY(-70%); } }
+  @media (min-width: 561px) {
+    header {
+      height: 150vh; } }
 
 .start-new {
   margin-top: 55px;
@@ -754,46 +806,13 @@ header {
   margin-bottom: 55px; }
   .about-us h3, .about-us p, .about-us a {
     color: #fff; }
-  .about-us .slick-track {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .about-us .about-us-item {
     position: relative;
     padding: 30px;
+    padding-bottom: 55px;
     width: 33.3%;
     -webkit-background-size: cover !important;
             background-size: cover !important; }
-    .about-us .about-us-item a {
-      padding-top: 20px; }
-      .about-us .about-us-item a .fa {
-        margin-left: 15px; }
-      .about-us .about-us-item a.read-more {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        -webkit-transform: translateX(0) translateY(-100%);
-            -ms-transform: translateX(0) translateY(-100%);
-                transform: translateX(0) translateY(-100%);
-        margin-top: -35px;
-        margin-left: 30px; }
-      .about-us .about-us-item a.like {
-        position: absolute;
-        top: 100%;
-        left: 100%;
-        -webkit-transform: translateX(-100%) translateY(-100%);
-            -ms-transform: translateX(-100%) translateY(-100%);
-                transform: translateX(-100%) translateY(-100%);
-        margin-top: -30px;
-        margin-left: -30px; }
     .about-us .about-us-item.large {
       width: 66.6%; }
       @media (max-width: 757px) {
@@ -840,3 +859,31 @@ header {
     .how-we-work p.title {
       font-weight: bold;
       color: #67676d; }
+
+.our-principles {
+  height: 100vh;
+  background: url("../img/Layer8.png");
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .our-principles p {
+    color: #fff; }
+  .our-principles .content {
+    position: relative;
+    top: 50%; }
+    .our-principles .content a.read-more {
+      position: static;
+      -webkit-transform: translateX(0) translateY(0);
+          -ms-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+      margin: 0; }
+    .our-principles .content > * {
+      width: 45%; }
+      @media (max-width: 560px) {
+        .our-principles .content > * {
+          width: 100%; } }
+  @media (max-width: 757px) {
+    .our-principles {
+      height: 100vh; } }
+  @media (min-width: 561px) {
+    .our-principles {
+      height: 150vh; } }
