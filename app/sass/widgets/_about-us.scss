@@ -1,10 +1,30 @@
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
-  margin-bottom: 55px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   h3, p, a {
     color: #fff;
+  }
+
+  a {
+    &.read-more {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform: translateX(0) translateY(-100%);
+      margin-top: -35px;
+      margin-left: 30px;
+    }
+
+    &.like {
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: translateX(-100%) translateY(-100%);
+      margin-top: -30px;
+      margin-left: -30px;
+    }
   }
 
   .about-us-item {
@@ -42,9 +62,8 @@
         border-radius: 50%;
       }
 
-
-        button {
-          &:focus, &:active {
+      button {
+        &:focus, &:active {
           border: none;
           outline: none;
         }

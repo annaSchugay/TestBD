@@ -675,36 +675,18 @@ a {
     text-decoration: underline; }
   a .fa {
     margin-left: 15px; }
-  a.read-more {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    -webkit-transform: translateX(0) translateY(-100%);
-        -ms-transform: translateX(0) translateY(-100%);
-            transform: translateX(0) translateY(-100%);
-    margin-top: -35px;
-    margin-left: 30px; }
-  a.like {
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    -webkit-transform: translateX(-100%) translateY(-100%);
-        -ms-transform: translateX(-100%) translateY(-100%);
-            transform: translateX(-100%) translateY(-100%);
-    margin-top: -30px;
-    margin-left: -30px; }
-    a.like .fa {
-      padding: 5px;
-      -webkit-transition: 0.3s all;
-      -o-transition: 0.3s all;
-      transition: 0.3s all;
-      -webkit-transform: scale(1);
-          -ms-transform: scale(1);
-              transform: scale(1); }
-      a.like .fa:hover {
-        -webkit-transform: scale(1.5);
-            -ms-transform: scale(1.5);
-                transform: scale(1.5); }
+  a.like .fa {
+    padding: 5px;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1); }
+    a.like .fa:hover {
+      -webkit-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+              transform: scale(1.5); }
 
 header {
   position: relative;
@@ -768,8 +750,8 @@ header {
       height: 150vh; } }
 
 .start-new {
-  margin-top: 55px;
-  margin-bottom: 55px; }
+  padding-top: 55px;
+  padding-bottom: 55px; }
   .start-new .content {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -802,10 +784,28 @@ header {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 55px;
-  margin-bottom: 55px; }
+  padding-top: 55px;
+  padding-bottom: 55px; }
   .about-us h3, .about-us p, .about-us a {
     color: #fff; }
+  .about-us a.read-more {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translateX(0) translateY(-100%);
+        -ms-transform: translateX(0) translateY(-100%);
+            transform: translateX(0) translateY(-100%);
+    margin-top: -35px;
+    margin-left: 30px; }
+  .about-us a.like {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    -webkit-transform: translateX(-100%) translateY(-100%);
+        -ms-transform: translateX(-100%) translateY(-100%);
+            transform: translateX(-100%) translateY(-100%);
+    margin-top: -30px;
+    margin-left: -30px; }
   .about-us .about-us-item {
     position: relative;
     padding: 30px;
@@ -850,8 +850,8 @@ header {
         background-color: #ac8458; }
 
 .how-we-work {
-  margin-top: 55px;
-  margin-bottom: 55px; }
+  padding-top: 55px;
+  padding-bottom: 55px; }
   .how-we-work h2 {
     margin-bottom: 20px; }
   .how-we-work p {
@@ -870,12 +870,6 @@ header {
   .our-principles .content {
     position: relative;
     top: 50%; }
-    .our-principles .content a.read-more {
-      position: static;
-      -webkit-transform: translateX(0) translateY(0);
-          -ms-transform: translateX(0) translateY(0);
-              transform: translateX(0) translateY(0);
-      margin: 0; }
     .our-principles .content > * {
       width: 45%; }
       @media (max-width: 560px) {
@@ -887,3 +881,12 @@ header {
   @media (min-width: 561px) {
     .our-principles {
       height: 150vh; } }
+
+.our-benefits {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #82ca9c; }
+  .our-benefits h2, .our-benefits p {
+    color: #fff; }
+    .our-benefits h2.title, .our-benefits p.title {
+      color: #fff; }
